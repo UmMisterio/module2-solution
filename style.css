@@ -1,0 +1,92 @@
+
+/* Universal */
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+	font-family: Georgia serif;
+	text-align: center;
+	color: black;
+	margin-bottom: 30px;
+}
+
+p {
+	padding: 15px 5px 0px 5px;
+	font-family: Georgia sans-serif;
+	position: relative;
+}
+
+span {
+	font-size: 20px;
+	width: 150px;
+	border: 1px solid black;
+	font-weight: bold;
+	text-align: center;
+	float: right; top :0; right: 0; margin: 0;
+	position: absolute;
+}
+
+/* Class and IDs */
+
+.container {
+	width: 100%;
+}
+
+.container-menu { 
+	background-color: lightgray;
+   	border: 1px solid black;
+   	margin-top: 20px; 
+   	margin-right: 20px; 
+   	padding: 3px;
+   	text-align: justify;
+   	position: relative;
+ }
+
+#container-menu-title-01 {
+	background-color: pink;
+}
+#container-menu-title-02 {
+	background-color: red;
+	color: white;
+}
+#container-menu-title-03 {
+	background-color: yellow;
+}
+
+/* Desktop */
+
+@media (min-width: 992px) {
+ 
+  .desk-menu-view {
+    width: 33.33%;
+    float: left;
+    overflow: hidden;
+	}
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+ 
+  .tablet-menu-half {
+    width: 50%;
+    float: left;
+    overflow: hidden;
+  }
+  .tablet-menu-view {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+  }
+}
+
+/* Cell*/
+@media (max-width: 767px)  {
+  
+  .cell-menu-view {
+  	float: left;
+    width: 100%;
+    overflow: hidden;
+  }
+}
